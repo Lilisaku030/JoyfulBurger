@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Feedback</title>
+        <link rel="stylesheet" href="Styles/Style.css">
+        <style>
+            table{
+                    background-image: url(Images/Clipboard.jpg);
+                    border-radius: 15px;
+                    border-style: solid;
+                    border-color: #4D0000;
+                    border-width: 5px;
+                }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="Index.html">Home Page</a>
+                <a href="AboutComp.html">About Us</a>
+                <a href="Feedback.html">Tell us what you think!</a>
+            </nav>
+            </header>
+        <article>
+        <h1>Tell Us What you think!</h1>
+
+        <form name="Feedback" action="mailto:Joyfulburger@gmail.com" method="post" enctype="text/plain">
+
+        <table>
+            <tbody>
+        <tr>
+            <td colspan="2">
+            How much stars would you rate us overall?
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <input type="radio" name="Star" id="1" value="1">
+            <label for="1">1 Star</label>
+            <input type="radio" name="Star" id="2" value="2">
+            <label for="2">2 Stars</label>
+            <input type="radio" name="Star" id="3" value="3">
+            <label for="3">3 Stars</label>
+            <input type="radio" name="Star" id="4" value="4">
+            <label for="4">4 Stars</label>
+            <input type="radio" name="Star" id="5" value="5">
+            <label for="5">5 Stars</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+            What type of feedback is this?
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="radio" name="feedback" id="Suggestion" value="Suggestion">
+            <label for="Suggestion">Suggestion</label>
+        
+            <input type="radio" name="feedback" id="Complaints" value="Complaints">
+            <label for="Complaints">Complaints</label>
+
+            <input type="radio" name="Compliment" id="Compliment" value="Compliment">
+        
+            <input type="radio" name="feedback" id="Other" value="Other">
+            <label for="Other">Other</label>
+            </td>
+        </tr>
+        
+
+    <tr>
+        <td colspan="2">
+            <textarea name="Feedback" cols="30" rows="10" required placeholder="Feedback Here"></textarea>
+        </td>
+      </tr>
+
+          <tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+            <td>
+                <input type="reset" value="Rewrite?">
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        </form>
+    </article>
+
+    <footer>
+        <p>&copy; <a href="AboutMe.html">Annonymous</a> ||Last updated: 17/11/2023</p>
+    </footer>
+
+    </body>
+</html>

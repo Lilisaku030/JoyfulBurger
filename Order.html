@@ -1,0 +1,340 @@
+<!Doctype html>
+
+<html lang="en">
+    <head>
+            <title>Delivery</title>
+            <link rel="stylesheet" href="Styles/Style.css">
+            <style>
+                h1{
+                    color: white;
+                    font-size: 50px;
+                }
+                h2{
+                    color: white;
+                }
+                .Order{
+                    font-size: 40px;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+                .Menu{
+                    background-color: wheat;
+                    border-style: solid;
+                    border-color: #4D0000;
+                    border-radius: 5px;
+                }
+                .Menu a:link{
+                    color: black;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                .Menu a:visited{
+                    color: black;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                .Menu a:hover{
+                    color: red;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                .title{
+                    font-size: 20px;
+                    text-decoration: underline;
+                }
+                table{
+                    background-image: url(Images/Clipboard.jpg);
+                    border-radius: 15px;
+                    border-style: solid;
+                    border-color: #4D0000;
+                    border-width: 5px;
+                }
+            </style>
+    </head>
+
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home Page</a>
+            <a href="AboutComp.html">About Us</a>
+            <a href="Feedback.html">Tell us what you think!</a>
+        </nav>
+
+        <h1>Online Delivery!</h1>
+        <h2>Just fill in the form and we will be ready!</h2> 
+    </header>    
+    <article>
+        <form name="Order" action="mailto:joyfulburgerdelivery@gmail.com" method="post" enctype="text/plain">
+            
+            <table>
+                    <tr>
+                        <td class="Order" colspan="4">
+                            <h3>Order Up!</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Menu" colspan="4">
+                        <a href="Menu1.html">Take a look at the menu?</a>
+                        </td>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td class="title">
+                        Burgers
+                        </td>
+                        <td class="title">
+                            Quantity
+                        </td>
+                        <td class="title">
+                        Hotdogs
+                        </td>
+                        <td class="title">
+                            Quantity
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <input type="radio" name="Meat" id="Chicken" value="Chicken">
+                        <label for="Chicken">Chicken</label>
+                        <input type="radio" name="Meat" id="Beef" value="Beef">
+                        <label for="Beef">Beef</label>
+                        <input type="radio" name="Meat" id="Lamb" value="Lamb">
+                        <label for="Lamb">Lamb</label>
+                    </td>
+                    <td>
+                        <input type="number" name="Burger_amount" min="0" value="0">
+                    </td>
+                    <td>
+                        <input type="radio" name="hotdog" id="chicken" value="chicken">
+                        <label for="chicken">Chicken</label>
+                        <input type="radio" name="hotdog" id="beef" value="beef">
+                        <label for="beef">Beef</label>
+                    </td>
+                    <td>
+                        <input type="number" name="Hotdog_amount" min="0" value="0">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="title" colspan="2">
+                        Ingredients(Burgers)
+                        </td>
+                        <td class="title" colspan="2">
+                        Ingredients(Hotdog)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="Ingredients" id="Lettuce" value="Lettuce" checked>
+                            <label for="Lettuce">Lettuce</label>
+                            <input type="checkbox" name="Ingredients" id="Onions" value="Onions" checked>
+                            <label for="Onions">Onions</label>
+                            <input type="checkbox" name="Ingredients" id="Tomatoes" value="Tomatoes" checked>
+                            <label for="Tomatoes">Tomatoes</label>
+                            <input type="checkbox" name="Ingredients" id="Pickles" value="Pickles" checked>
+                            <label for="Pickles">Pickles</label>
+                            <input type="checkbox" name="Ingredients" id="Cheese" value="Cheese" checked>
+                            <label for="Cheese">Cheese</label>
+                        </td>
+                        <td colspan="2">
+                            <input type="checkbox" name="Topping" id="onions" value="onions" checked>
+                            <label for="onions">Onions</label>
+                            <input type="checkbox" name="Topping" id="cheese" value="cheese" checked>
+                            <label for="cheese">Cheese</label>
+                            <input type="checkbox" name="Topping" id="signature_sauce" value="signature_sauce" checked>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="title">
+                            Sauce (Burgers)
+                        </td>
+                        <td colspan="2" class="title">
+                            Sauce (Hotdogs)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="Ingredients" id="Signature_Sauce" value="Signature_Sauce" checked>
+                            <label for="Signature_Sauce">Signature_Sauce</label>
+                            <input type="checkbox" name="Ingredients" id="Mayo" value="Mayo" checked>
+                            <label for="mayo">Mayo</label>
+                            <input type="checkbox" name="Ingredients" id="Ketchup" value="Ketchup" checked>
+                            <label for="Ketchup">Ketchup</label>
+                            <input type="checkbox" name="Ingredients" id="Mustard" value="Mustard" checked>
+                            <label for="Mustard">Mustard</label>
+                        </td>
+                        <td colspan="2">
+                            <label for="signature_sauce">Signature_Sauce</label>
+                            <input type="checkbox" name="Topping" id="mayo" value="mayo" checked>
+                            <label for="mayo">Mayo</label>
+                            <input type="checkbox" name="Topping" id="ketchup" value="ketchup" checked>
+                            <label for="ketchup">Ketchup</label>
+                            <input type="checkbox" name="Topping" id="mustard" value="mustard" checked>
+                            <label for="mustard">Mustard</label>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td class="title" colspan="4">
+                        Side snacks
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Fries
+                        </td>
+                        <td>
+                            <input type="number" name="Fries_amount" min="0" value="0">
+                        </td>
+                        <td>
+                            Chicken Nuggets
+                        </td>
+                        <td>
+                            <input type="number" name="Nugget_amount" min="0" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Wedges
+                        </td>
+                        <td>
+                            <input type="number" name="Wedges_amount" min="0" value="0">
+                        </td>
+                        <td>
+                            Mashed Potatoes
+                        </td>
+                        <td>
+                            <input type="number" name="MashedP_amount" min="0" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Salads
+                        </td>
+                        <td>
+                            <input type="number" name="Salad_amount" min="0" value="0">
+                        </td>
+                        <td>
+                            Onion Rings
+                        </td>
+                        <td>
+                            <input type="number" name="ORings_amount" min="0" value="0">
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td class="title" colspan="4">
+                            Drinks
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title" colspan="4">
+                            Soft Drinks
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Coca-Cola
+                        </td>
+                        <td>
+                            <input type="number" name="coke_amount" min="0" value="0">
+                        </td>
+                        <td>
+                            Sprite
+                        </td>
+                        <td>
+                            <input type="number" name="sprite_amount" min="0" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        100 Plus
+                        </td>
+                        <td>
+                            <input type="number" name="100Plus_amount" min="0" value="0">
+                        </td>
+                        <td>
+                        MountainDew
+                        </td>
+                        <td>
+                            <input type="number" name="MountainDew_amoount" min="0" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title" colspan="4">
+                            Iced Tea
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Ice Lemon Tea
+                        </td>
+                        <td>
+                            <input type="number" name="ILTamount" min="0" value="0">
+                        </td>
+                        <td>
+                        Passion Fruit Tea
+                        </td>
+                        <td>
+                            <input type="number" name="PFT_amount" min="0" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Green Tea
+                        </td>
+                        <td>
+                            <input type="number" name="GreenT_amount" min="0" value="0">
+                        </td>
+                        <td>
+                            Chrysanthenum Tea
+                        </td>
+                        <td>
+                            <input type="number" name="CT_amount" min="0" value="0">
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="title">
+                        <td>
+                        Where do we send it?
+                        </td>
+                        <td>
+                           What is your name? 
+                        </td>
+                        <td colspan="2">
+                            What number to be called?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                    <textarea name="Address" id="Address" cols="30" rows="10" placeholder="Address here" required></textarea>
+                        </td>
+                    <td>
+                        <textarea name="Name" id="Name" cols="30" rows="10" placeholder="Your Name Here" required></textarea>
+                    </td>
+                    <td colspan="2">
+                        <textarea name="Phone" id="Phone" cols="30" rows="10" placeholder="Phone number" required></textarea>
+                    </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <input type="Submit" value="Submit">
+                        </td>
+                        <td colspan="2">
+                            <input type="reset" value="Redo?">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+    </article>
+    <footer>
+        <p>&copy; <a href="AboutMe.html"> The Annonymous</a> ||Last updated: 17/11/2023</p>
+    </footer>
+</body>
+</html>
